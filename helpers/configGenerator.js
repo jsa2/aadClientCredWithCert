@@ -55,12 +55,15 @@ function x5tf (key) {
 }
 
 
- async function generateConfig (appid,tenantId) {
+ async function generateConfig (appid,tenantId, pass) {
 
     var cmd = [
         'openssl genrsa -out private1.pem 2048',
-        'openssl req -new -x509 -key private1.pem -out public1.pem -days 720 -config ca.cnf -subj "/C=FI/CN=AADCert"'
-        ]
+        'openssl req -new -x509 -key private1.pem -out public1.pem -days 720 -config ca.cnf -subj "/C=FI/CN=spnforaad.localdom/OU=IT Department/"',
+        `openssl pkcs12 -inkey private1.pem -in public1.pem -export -out pack.pfx -passout "pass:${pass}"`,
+        `openssl pkcs12 -in pack.pfx -passin "pass:${pass}"  -out "PemWithBagAttributes.pem" -nodes`,
+        /* 'rm pack.pfx' */    
+    ]
 
     try {
         for (let index = 0; index < cmd.length; index++) {
