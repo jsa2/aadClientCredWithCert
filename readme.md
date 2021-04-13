@@ -28,7 +28,7 @@ Previously I've been using the ADAL JS, but as it's being phased out I decided t
 
 
 ## Updates
-use [DevOpsCompat branch](https://github.com/jsa2/aadClientCredWithCert/tree/DevOpsCompat) for Azure Devops compatible version 
+ Made the created certs Azure Devops compatible (requires use of Bag attributes which the original version didn't handle) 
 - Added pfx and pem with Bag Attributes to certificate output to be able use the same generation mechnism for Azure Devops (for the rest of this part these two files don't have any relevance)
   
 
