@@ -91,7 +91,7 @@ function x5tf (key) {
         "url":`https://login.microsoftonline.com/${tenantId}/oauth2/token`
     }
     
-    fs.writeFileSync('nodeConfig.json', JSON.stringify(config))
+    fs.writeFileSync('nodeconfig.json', JSON.stringify(config))
 
     return('config file created at \\nodeconfig.json')
    
