@@ -35,7 +35,7 @@ function x5tf (key) {
 
     var shaSig = stdout.replace('SHA1 Fingerprint=','')
     //console.log(shaSig)
-    // code below from https://redthunder.blog/2017/06/08/jwts-jwks-kids-x5ts-oh-my/
+    // parts from X5tf function are from https://redthunder.blog/2017/06/08/jwts-jwks-kids-x5ts-oh-my/
     var sigOctets = shaSig.split(":");
     var sigBuffer = Buffer.alloc(sigOctets.length)
     for(var i=0; i<sigOctets.length; i++){

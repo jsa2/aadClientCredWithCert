@@ -10,6 +10,7 @@ Previously I've been using the ADAL JS, but as it's being phased out I decided t
 **Contents**
 - [Azure AD Client Credentials with Certificate - Code Examples for Node.js](#azure-ad-client-credentials-with-certificate---code-examples-for-nodejs)
   - [Updates](#updates)
+  - [Flow diagram](#flow-diagram)
   - [Depedencies and references](#depedencies-and-references)
     - [OS and runtime](#os-and-runtime)
     - [Further depedencies](#further-depedencies)
@@ -31,9 +32,17 @@ Previously I've been using the ADAL JS, but as it's being phased out I decided t
  Made the created certs Azure Devops compatible (requires use of Bag attributes which the original version didn't handle) 
 - Added pfx and pem with Bag Attributes to certificate output to be able use the same generation mechnism for Azure Devops (for the rest of this part these two files don't have any relevance)
   
-
 ![img](img/bag.png)
+
 ![img](img/azdevops.png)
+
+
+
+## Flow diagram
+![img](img/flow.png)
+
+
+
 
 ## Depedencies and references
 |Depedencies| NPM Description | Use in project|
