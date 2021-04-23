@@ -13,6 +13,7 @@ Previously I've been using the ADAL JS, but as it's being phased out I decided t
   - [Flow diagram](#flow-diagram)
   - [Depedencies and references](#depedencies-and-references)
     - [OS and runtime](#os-and-runtime)
+    - [Recommended: USE NVM with Linux](#recommended-use-nvm-with-linux)
     - [Further depedencies](#further-depedencies)
     - [Reference documentation](#reference-documentation)
   - [Flow](#flow)
@@ -57,6 +58,16 @@ This package has been tested in mainstream versions of Linux, MacOS and Windows 
 |Win| &#9745;
 |MacOS|&#9745;
 |Linux|&#9745;
+
+### Recommended: USE NVM with Linux
+To run this example it's highly recommended to use Node Version Manager
+Once you've installed NVM:
+```
+![NVM Installation](https://github.com/nvm-sh/nvm#installing-and-updating)
+nvm install 15
+nvm use 15;
+
+```
 
 ### Further depedencies
 * Helpful example at [redthunder.blog](https://redthunder.blog/2017/06/08/jwts-jwks-kids-x5ts-oh-my) for Node.JS was used
