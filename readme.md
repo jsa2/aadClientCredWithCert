@@ -82,6 +82,9 @@ nvm use 15;
     //Perform base64url-encoding as per RFC7515 Appendix C
     // code 
    ```
+  
+ > there appears also excellent example on same operation on [AzIdentity SDK](https://github.com/Azure/azure-sdk-for-js/blob/@azure/identity_2.1.0/sdk/identity/identity/samples/AzureIdentityExamples.md#creating-a-callback-function-to-return-assertion)
+   
 * [OpenSSL](https://www.openssl.org/) is used in helper function for generating RSA key pair and X5T
 * Example for ca.conf was used from [Github Gist](https://gist.github.com/klingerf/d43738ac98b6bf0479c47987977a7782) by [https://github.com/klingerf](https://github.com/klingerf) 
   * This is needed for the creation of X509 rsa key pair, if you have production use case review carefully all params in the CA.CNF file and modify appropriately. 
